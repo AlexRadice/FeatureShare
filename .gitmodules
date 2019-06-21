@@ -1,0 +1,2 @@
+[submodule "Features"]
+	path = FeatureShare.Library.Tests/Features

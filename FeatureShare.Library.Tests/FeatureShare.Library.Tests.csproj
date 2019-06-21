@@ -6,10 +6,21 @@
 
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="SpecFlow" Version="3.0.220" />
+    <PackageReference Include="SpecFlow.NUnit" Version="3.0.220" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.0.220" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\FeatureShare.Library\FeatureShare.Library.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Features\**\*.feature.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
   </ItemGroup>
 
 </Project>
