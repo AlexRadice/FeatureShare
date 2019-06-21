@@ -1,2 +1,3 @@
 [submodule "Features"]
 	path = FeatureShare.Library.Tests/Features
+	url = https://github.com/AlexRadice/FeatureShare.Features.git
